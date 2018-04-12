@@ -2244,7 +2244,7 @@ class Player extends Component {
    *        Event to check for key press
    */
   fullWindowOnEscKey(event) {
-    if (event.keyCode === 27) {
+    if (event.keyCode === 27 || evt.key == "Escape" || evt.key == "Esc") {
       if (this.isFullscreen() === true) {
         this.exitFullscreen();
       } else {
